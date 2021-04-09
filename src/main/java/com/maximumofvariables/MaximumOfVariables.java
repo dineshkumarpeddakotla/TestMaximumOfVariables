@@ -2,7 +2,7 @@ package com.maximumofvariables;
 
 public class MaximumOfVariables {
 
-    public Integer findMaxInteger(Integer firstNumber, Integer secondNumber, Integer thirdNumber) {
+    public Float findMaxFloat(Float firstNumber,Float secondNumber,Float thirdNumber) {
 
         if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0)
             return firstNumber;
