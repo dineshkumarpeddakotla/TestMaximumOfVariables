@@ -16,5 +16,11 @@ public class TestMaximumOfVariables {
         int testMaximum = testObj.findMaxInteger(25, 89, 65);
         Assertions.assertEquals(89, testMaximum);
     }
+
+    @Test
+    void GivenIntegerArray_MaxInteger_ThirdPosition_ReturnsTrue() {
+        int testMaximum = testObj.findMaxInteger(25, 65, 89);
+        Assertions.assertEquals(89, testMaximum);
+    }
 }
 
