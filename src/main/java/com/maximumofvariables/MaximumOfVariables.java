@@ -2,14 +2,14 @@ package com.maximumofvariables;
 
 public class MaximumOfVariables {
 
-    public Float findMaxFloat(Float firstNumber,Float secondNumber,Float thirdNumber) {
+    public String findMaxString(String firstString, String secondString, String thirdString) {
 
-        if (firstNumber.compareTo(secondNumber) > 0 && firstNumber.compareTo(thirdNumber) > 0)
-            return firstNumber;
+        if (firstString.compareTo(secondString) > 0 && firstString.compareTo(thirdString) > 0)
+            return firstString;
 
-        if (secondNumber.compareTo(thirdNumber) > 0)
-            return secondNumber;
+        if (secondString.compareTo(thirdString) > 0)
+            return secondString;
 
-        return thirdNumber;
+        return thirdString;
     }
 }
