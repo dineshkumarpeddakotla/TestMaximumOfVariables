@@ -1,15 +1,15 @@
 package com.maximumofvariables;
 
-public class MaximumOfVariables {
+public class MaximumOfVariables <E extends Comparable<E>> {
 
-    public String findMaxString(String firstString, String secondString, String thirdString) {
+    public E findMaxVariable(E firstVariable,E secondVariable,E thirdVariable) {
 
-        if (firstString.compareTo(secondString) > 0 && firstString.compareTo(thirdString) > 0)
-            return firstString;
+        if (firstVariable.compareTo(secondVariable) > 0 && firstVariable.compareTo(thirdVariable) > 0)
+            return firstVariable;
 
-        if (secondString.compareTo(thirdString) > 0)
-            return secondString;
+        if (secondVariable.compareTo(thirdVariable) > 0)
+            return secondVariable;
 
-        return thirdString;
+        return thirdVariable;
     }
 }
