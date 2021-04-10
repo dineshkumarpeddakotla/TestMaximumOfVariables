@@ -32,5 +32,16 @@ public class MaximumOfVariables <E extends Comparable<E>> {
     public  E findMaxVariable(){
         return MaximumOfVariables.multipleVariable(firstVariable,secondVariable,thirdVariable,fourthVariable,fifthVariable);
     }
+    public void printMaximum(){
 
+        System.out.print("The Maximum of :"+firstVariable+" , "+secondVariable+" , "+thirdVariable+" , "+fourthVariable+" , "+fifthVariable+" is :");
+        System.out.println(multipleVariable(firstVariable,secondVariable,thirdVariable,fourthVariable,fifthVariable));
+
+    }
+
+    public static void main(String[] args) {
+        new MaximumOfVariables<Integer>(89, 25, 65,55,7).printMaximum();
+        new MaximumOfVariables<Float>(89.25f,25.85f ,65.69f,25.68f,64.89f).printMaximum();
+        new MaximumOfVariables<>("Apple", "Peach", "Banana", "Grape", "Mango");
+    }
 }
